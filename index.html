@@ -52,6 +52,7 @@
     memUrl: "Release/Slingshot-WebGL.mem",
   };
 </script>
+      <script src="Release/UnityLoader.js"></script>
       <script>
   /**
    * Created by
@@ -61,7 +62,7 @@
    * with a story: "Football Voodoom" :-)
    * */
 
-  var appName = "<b>" + Module.codeUrl.replace("Release/", "").replace(".js","") + "</b> ";
+  var appName = "Slingshot";
   var canvas = document.getElementsByTagName("canvas")[0];
   var canvasRect = canvas.getBoundingClientRect();
 
@@ -110,7 +111,7 @@
     }
   },100)
 </script>
-<script src="Release/UnityLoader.js"></script>
+
 
   </body>
 </html>
