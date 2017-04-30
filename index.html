@@ -3,13 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Slingshot</title>
-    <style>
-    /* a style sheet needs to be present for cursor hiding and custom cursors to work. */
-    </style>
+    <title>Slingshot</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+    
+   <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        canvas {
+            height: 75vh;
+            width: 75vw;
+            display: block;
+          overflow: hidden;
+     
+        }
+    </style> -->
+
   </head>
-  <body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+  
+ <body class="template" style="background-color:black;">
+   
+  <!--  <body bgcolor="#E6E6FA">-->
+    <div class="template-wrap clear">
+       <canvas id="canvas" oncontextmenu="event.preventDefault()" width="900px" height="550px"></canvas>
+     <div><a href="https://play.google.com/store/apps/details?id=com.FlyingSpaghetti.Slingshot&hl=en" target="_blank"><img src="https://raw.githubusercontent.com/gowthamgoli/Slingshot-WebGL/gh-pages/TemplateData/play-store.png" width="188" height="56" alt="Google Play Store" title="Google Play Store" /></a>
+    <img src="TemplateData/fullscreen.png" width="56" height="56" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" align="right"/>
+
+    </div>
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
